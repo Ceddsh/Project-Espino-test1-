@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Name - Portfolio</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    header nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Section styles */
+    .section {
+      padding: 40px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Bio Section Styles */
+    #bio {
+      background-color: #ffffff;
+      padding: 40px 0;
+    }
+
+    .bio-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .bio-image img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #4caf50;
+    }
+
+    .bio-text {
+      max-width: 600px;
+    }
+
+    .bio-text p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    #bio h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Skills section styles */
+    .skills-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skill-card {
+      width: 22%;
+    }
+
+    .skill-bar {
+      height: 10px;
+      background-color: #4caf50;
+      margin-top: 10px;
+    }
+
+    /* Projects section styles */
+    .project-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 45%;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    /* Contact form styles */
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    form label {
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello, I’m Your Name. I’m a passionate web developer with a love for creating intuitive and dynamic user experiences. I have experience in HTML, CSS, JavaScript, and various front-end technologies. My goal is to continue learning and creating innovative websites.</p>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section id="bio" class="section">
+    <div class="container">
+      <h2>My Bio</h2>
+      <div class="bio-content">
+        <div class="bio-image">
+          <img src="your-photo.jpg" alt="Your Name" />
+        </div>
+        <div class="bio-text">
+          <p>Hi, I’m Your Name, a passionate web developer based in [City/Country]. I started my journey in web development [X years/months] ago and have since dedicated myself to mastering the art of front-end and back-end technologies. I love coding because it lets me bring creative ideas to life on the web.</p>
+          <p>Outside of coding, I enjoy [your hobbies, such as hiking, photography, or gaming]. I believe in continuous learning, and I’m always on the lookout for new challenges and opportunities to grow as a developer.</p>
+          <p>Some of my proudest achievements include [mention any personal or professional achievements, such as completing a coding bootcamp, contributing to open-source projects, or building a portfolio site].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <div class="skill-bar" style="width: 90%;"></div>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="skill-bar" style="width: 85%;"></div>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill-card">
+          <h3>React</h3>
+          <div class="skill-bar" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A web application built with React and Node.js that allows users to track their daily tasks.</p>
+          <a href="https://link-to-project.com" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>An e-commerce website with a shopping cart functionality and a secure checkout system.</p>
+          <a href="https://link-to-project.com" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
